@@ -1,2 +1,2 @@
-export const a = 'hello';
-export const b = 'world';
+export const a = '我是AAAAAAAA';
+export const b = '我是BBBBBBBB';
