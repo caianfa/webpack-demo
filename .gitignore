@@ -1,0 +1,4 @@
+cache-test/node_modules/**
+cache-test/dist/**
+tree-shaking/node_modules/**
+tree-shaking/dist/**
