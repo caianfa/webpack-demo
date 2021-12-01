@@ -5,6 +5,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index',
   mode: 'development',
+  devtools: false,
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 3002,
@@ -25,7 +26,6 @@ module.exports = {
     ],
   },
   plugins: [
-    // To learn more about the usage of this plugin, please visit https://webpack.js.org/plugins/module-federation-plugin/
     new ModuleFederationPlugin({
       name: 'app2',
       filename: 'remoteEntry.js',

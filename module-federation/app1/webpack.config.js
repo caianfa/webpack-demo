@@ -6,6 +6,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/index",
   mode: "development",
+  devtools: false,
   devServer: {
     static: path.join(__dirname, "dist"),
     port: 3001,
@@ -39,4 +40,3 @@ module.exports = {
     }),
   ],
 };
-
