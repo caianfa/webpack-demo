@@ -12,6 +12,18 @@ module.exports = {
     // filename: 'main.js'
     filename: '[name]-[contenthash].js',
   },
+  target: 'web',
+  resolve: {
+    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],// other stuff
+    fallback: {
+      // "fs": false,
+      // "crypto": false,
+      "stream": false,
+      "buffer": false,
+      "crypto": require.resolve("crypto-browserify")
+      // "crypto-browserify": require.resolve("crypto-browserify")
+    }
+  },
   module: {
     rules: [
       {
